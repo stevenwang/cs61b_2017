@@ -19,6 +19,9 @@ public class LeapYear{
   }
 
   public static void main(String[] args) {
+    /**
+    this part of code is modified from that given by CS61b originally
+    */
       if (args.length < 1) {
           System.out.println("Please enter command line arguments.");
           System.out.println("e.g. java Year 2000");
