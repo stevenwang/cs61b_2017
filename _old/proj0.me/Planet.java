@@ -4,9 +4,9 @@ public class Planet{
   public double xxVel;
   public double yyVel;
   public double mass ;
-  public String imgFileName;
+  public String imgFilename;
 
-  /** class constructor */
+
   public Planet(double xP, double yP, double xV,
                 double yV, double m, String img){
     xxPos = xP ;
@@ -14,7 +14,7 @@ public class Planet{
     xxVel = xV ;
     yyVel = yV ;
     mass  = m  ;
-    imgFileName = img;
+    imgFilename = img;
   }
 
   public Planet Planet_Copy(Planet p){
@@ -23,7 +23,7 @@ public class Planet{
     xxVel = p.xxVel ;
     yyVel = p.yyVel ;
     mass  = p.mass  ;
-    imgFileName = p.imgFileName;
+    imgFilename = p.imgFilename;
     return this ;
   }
 
@@ -77,10 +77,6 @@ public class Planet{
     this.xxPos += dt*this.xxVel ;
     this.yyPos += dt*this.yyVel ;
     return this ;
-  }
-
-  public void draw(){
-    StdDraw.picture(this.xxPos, this.yyPos, this.imgFileName) ;
   }
 
 }

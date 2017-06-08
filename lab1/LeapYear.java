@@ -28,7 +28,7 @@ public class LeapYear{
       }
       for (int i = 0; i < args.length; i++) {
           try {
-              int year = Integer.parseInt(args[i]);
+              int year = Integer.parseInt(args[i]); /** convert string to int in java using parseInt */
               if(isLeapYear(year)){
                 System.out.println(year + "is a leap year");
               }
